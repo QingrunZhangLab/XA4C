@@ -70,7 +70,7 @@ colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
 
 dds <- DESeq(dds)
 
-res <- results(dds,alpha=0.05) #alpha default is 0.1
+res <- results(dds,alpha=0.05)
 
 selected_res <- res[!is.na(res$padj),]
 selected_res <- selected_res[selected_res$padj < 0.05,]
