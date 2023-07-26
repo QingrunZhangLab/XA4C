@@ -1,4 +1,4 @@
-# eXplainable Autoencoder for Critical genes 
+# eXplainable Autoencoder for Critical genes
 
 ## Preamble
 
@@ -71,7 +71,7 @@ SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the
 
 ### 2. Representation learning by Deep AutoEncoder
 
-- Construction of autoencoders and their train/test are wrapped in the function named **AE4EXP** in **XAI4Exp.py**.  
+- Construction of autoencoders and their train/test are wrapped in the function named **AE4EXP** in **XA4C.py**.  
 
 - Because we don't have a certain rule to tuning parameter, we always compare the results and find the best combination. Following is the parameter that would affect the results:
   - batch_size (number of samples that AEs are trained at once)
@@ -81,7 +81,7 @@ SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the
 
 ### 3. SHAP explanation
 
-- Explanations of TreeSHAP is embedded in the function named **XAI4AE** in **XAI4Exp.py**.
+- Explanations of TreeSHAP is embedded in the function named **XAI4AE** in **XA4C.py**.
 
 - SHAP values:
   - Absolute values of SHAP values presenting the contribution of inputs to each hidden node will be presented in Excel tables. We also reported Trees R squared values. Finally, the final SHAP values for one input are its SHAP values summarized over all nodes and weighted by nodes' corresponding Tree R squared values.  
